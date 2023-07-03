@@ -1,0 +1,38 @@
+#welcoming-header-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: black;
+  padding: 5vw;
+}
+#ultimateresume-header {
+  font-size: 52px;
+  max-width: 50vw;
+  font-weight: 700;
+}
+#ultimateresume-description {
+  color: black;
+  font-size: 1.7vw;
+  max-width: 80vw;
+}
+#tryforfree-button {
+  width: 18vw;
+  height: 6vw;
+  padding: 2vw;
+  background-color: blue;
+  color: white;
+  font-size: 2.2vw;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.8s;
+}
+#tryforfree-button:hover {
+  background-color: rgb(3, 3, 155);
+}
+.mainpage-welcome-img {
+  width: 80%;
+}

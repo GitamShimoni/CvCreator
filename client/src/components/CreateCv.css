@@ -1,0 +1,136 @@
+.cv-form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .template-select-image{
+    height: 28vw;
+    transition: 0.7s;
+    margin: 2vw;
+    padding: 0.5vw;
+  }
+  .template-select-image:hover{
+    box-shadow: 0px 0px 10px 3px #202f63;
+  }
+  .template-select-image-selected{
+    box-shadow: 0px 0px 10px 6px #6df538;
+  }
+  .template-select-image-div{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2vw;
+    text-decoration: underline;
+  }
+  .cv-form {
+    width: 40vw;
+    padding: 4vw;
+    background-color: #d5d5d5;
+    border-radius: 5px;
+  }
+  
+  .cv-form-single-input {
+    width: 100%;
+    padding: 1.2vw;
+    margin-bottom: 3vw;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-sizing: border-box;
+  }
+  
+  .cv-form-single-input::placeholder {
+    color: #999;
+  }
+  .dateinput-div{
+    width: 20%;
+    display: flex;
+    align-items: center;
+  }
+  .cv-form-different-input {
+    width: 28%;
+    padding: 1.5vw;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    box-sizing: border-box;
+  }
+  .cv-form-differentSkills-input{
+    width: 70%;
+    padding: 1.5vw;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    box-sizing: border-box;
+  }
+  .skillhighlights-div{
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 2vw;
+    align-items: center;
+    flex-direction: column
+  }
+  .skillhighlights-top-div{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .skillhighlights-bottom-div{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .cv-form-different-input::placeholder {
+    color: #999;
+  }
+  input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #45a049;
+  }
+  .cv-form-couple-input{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .xbutton-div{
+    display: flex;
+    cursor: pointer;
+    background-color: rgb(189, 223, 248);
+    width: 1.5vw;
+    height: 1.5vw;
+    align-items: center;
+    justify-content: center;
+    transition: 1s;
+    border-radius: 15px;
+    font-size: 1.5vw;
+    padding: 0.5vw;
+    text-align: center;
+  }
+  .xbutton-div:hover{
+    background-color: rgb(84, 165, 227);
+  }
+  .cv-form-skill-div{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin: 2vw;
+  }
+  .cv-form-headers{
+    font-size: 3vw;
+    color: black;
+    margin: 3vw;
+  }
+  .cv-form-headers-globally{
+    font-size: 2.5vw;
+    color: black;
+    margin: 2vw;
+  }
+  .submit-button{
+    margin-top: 5vw;
+  }

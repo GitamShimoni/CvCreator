@@ -1,0 +1,130 @@
+.template2-container{
+    background: linear-gradient(30deg, rgb(255, 255, 255) 0%, rgb(246, 249, 255) 100%);
+    border: 5px solid black;
+    border-radius: 15px;
+    width: 80%;
+    margin: 5vw;
+    display: flex;
+    padding: 3vw;
+    position: relative;
+    overflow: hidden;
+    z-index: 0;
+}
+.template2-container::before{
+    content: "";
+    z-index: -1;
+    position: absolute;
+    width: 30vw;
+    height: 170vw;
+    top: -61vw;
+    right: 30vw;
+    transform: skew(40deg) rotate(71deg);
+    background: linear-gradient(25deg, rgb(255, 125, 65) 0%, rgb(255, 200, 184) 100%);
+    opacity: 0.5;
+}
+.template2-container::after{
+    content: "";
+    z-index: -2;
+    position: absolute;
+    width: 30vw;
+    height: 240vw;
+    top: -55vw;
+    right: 17vw;
+    transform: skew(40deg) rotate(230deg);
+    background: linear-gradient(130deg, rgb(255 230 218) 0%, rgb(255, 200, 184) 100%);
+    opacity: 0.5;
+}
+.template2-personal-img{
+    height: 18vw;
+    width: 18vw;
+    object-fit: cover;
+    border-radius: 50%;
+    padding: 1vw;
+    border: 4px inset rgb(179, 78, 60);
+    background: linear-gradient(30deg, rgb(247, 236, 173) 0%, rgb(247, 173, 62) 100%);
+}
+.template2-left-part{
+    display: flex;
+    align-items: flex-start;
+    padding: 2vw;
+    flex-direction: column;
+    width: 40vw;
+    justify-content: space-between;
+}
+.template2-topleft-part{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.template2-firstname-header{
+    font-size: 8vw;
+    color: black;
+    margin: 0;
+}
+.template2-lastname-header{
+    font-size: 8vw;
+    font-weight: bolder;
+    color: rgb(0, 0, 0);
+    -webkit-text-stroke: 4px rgb(0, 0, 0);
+    margin: 0;
+}
+.template2-personalinfo-properties{
+    font-size: 2.2vw;
+    color: black;
+}
+.template2-aboutme-header{
+    font-size: 3.5vw;
+    color: black;
+}
+.template2-namesummary-container{
+    margin-top: 2vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.template2-right-part{
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid black; */
+    box-shadow: 0px 0px 10px 3px #202f63;
+    padding: 3vw;
+}
+.template2-education-container{
+    display: flex;
+    flex-direction: column;
+    width: 30vw;
+    padding: 0.3vw;
+}
+.template2-educationtop-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.template2-educationbottom-container{
+    margin: 0;
+}
+.template2-aboutme-container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.template2-personalinfos-properties{
+    font-size: 2vw;
+    color: black;
+}
+.template2-subheader{
+    font-size: 3.1vw;
+    color: black;
+}
+.template2-education-h3{
+    font-size: 2.4vw;
+    color: black;
+}
+.template2-educationDate-h3{
+    font-size: 1.4vw;
+    color: black;
+}
+.template2-educationdetails-h3{
+    font-size: 1.8vw;
+    color: black;
+}

@@ -1,0 +1,147 @@
+.template3-container {
+  background: linear-gradient(
+    30deg,
+    rgb(255, 255, 255) 0%,
+    rgb(246, 249, 255) 100%
+  );
+  border: 5px solid black;
+  border-radius: 15px;
+  width: 80%;
+  margin: 5vw;
+  display: flex;
+  flex-direction: column;
+  padding: 3vw;
+  position: relative;
+  overflow: hidden;
+  z-index: 0;
+}
+.template3-container::before {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  width: 68vw;
+  height: 15vw;
+  top: 5.5vw;
+  right: 0;
+  background: linear-gradient(
+    255deg,
+    rgba(255, 212, 93, 1) 0%,
+    rgba(237, 158, 29, 1) 100%
+  );
+}
+.template3-container::after {
+  content: "";
+  z-index: -2;
+  position: absolute;
+  width: 33vw;
+  height: 300vw;
+  top: 0;
+  right: 0vw;
+  background: linear-gradient(
+    180deg,
+    rgb(41, 39, 39) 0%,
+    rgba(0, 0, 0, 1) 100%
+  );
+}
+.template3-img-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.template3-personal-img {
+  height: 18vw;
+  width: 18vw;
+  object-fit: cover;
+  border-radius: 50%;
+  padding: 1vw;
+  border: 4px inset rgb(0, 0, 0);
+  background: linear-gradient(30deg, rgb(248, 134, 58) 0%, rgb(223, 81, 15));
+}
+.template3-firstname-header {
+  font-size: 6vw;
+  color: rgb(255, 255, 255);
+  margin: 0;
+}
+.template3-lastname-header {
+  font-size: 6vw;
+  font-weight: bolder;
+  color: rgb(255, 255, 255);
+  /* -webkit-text-stroke: 4px rgb(0, 0, 0); */
+  margin: 0;
+}
+.template3-name-container {
+  display: flex;
+  width: 40vw;
+  justify-content: space-between;
+}
+.template3-bottomright-container {
+  width: 28vw;
+}
+.template3-nameinfo-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.template3-personalinfo-properties {
+  color: rgb(255, 255, 255);
+  font-size: 2.2vw;
+}
+.template3-bottom-container {
+  display: flex;
+  justify-content: space-between;
+}
+.template3-educationheader-div {
+  width: 42vw;
+  height: 5vw;
+  background-color: orange;
+  margin-left: -3vw;
+  margin-top: 4vw;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.template3-education-header {
+  font-size: 4vw;
+  color: black;
+  margin-right: 3vw;
+  font-weight: bolder;
+}
+.template3-education-container {
+  display: flex;
+  margin: 3vw;
+  align-items: center;
+  justify-content: space-around;
+}
+.template3-orange-box {
+  width: 2.5vw;
+  height: 2.5vw;
+  background-color: orange;
+}
+.template3-education-titledate {
+  display: flex;
+  flex-direction: column;
+}
+.template3-educationDate-h3 {
+  font-size: 1.8vw;
+  margin: 0;
+}
+.template3-subheader {
+  font-size: 3.5vw;
+  color: white;
+  text-align: center;
+  border: 2px solid orange;
+  padding: 1vw;
+}
+.template3-personalinfos-properties {
+  color: white;
+  font-size: 1.8vw;
+}
+.template3-skills-list {
+  color: white;
+  font-size: 1.8vw;
+}
+.template3-bottomleft-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}

@@ -1,0 +1,159 @@
+#template1-container {
+  background: linear-gradient(
+    142deg,
+    rgb(255, 255, 255) 0%,
+    rgb(238, 238, 238) 100%
+  );
+  border: 5px solid black;
+  border-radius: 15px;
+  width: 80%;
+  margin: 3vw;
+}
+.hr-div {
+  width: 80%;
+  height: 0.2vw;
+  background-color: black;
+  display: flex;
+  margin: auto;
+}
+.template-personal-img {
+  height: 18vw;
+  width: 18vw;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.template-name-header-div {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 3vw;
+  border-top: 3px solid black;
+  border-bottom: 3px solid black;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+}
+
+.template-name-header-div:before {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  width: 100vw;
+  height: 8vw;
+  bottom: 52%;
+  background: linear-gradient(
+    255deg,
+    rgba(255, 243, 172, 1) 0%,
+    rgba(222, 138, 28, 1) 100%
+  );
+}
+.template-name-header {
+  color: white;
+  font-size: 4.4vw;
+  -webkit-text-stroke: 1px black;
+}
+.template-personalinfo-properties {
+  color: black;
+  font-size: 2.1vw;
+}
+.all-info-template-container {
+  display: flex;
+}
+.template-phonehobbies-div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: column;
+}
+#template-phonehobbies-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 2vw;
+}
+.template-personalinfo-header {
+  font-size: 2.2vw;
+  text-decoration: underline;
+  color: rgb(0, 0, 0);
+}
+.template-skills-header {
+  font-size: 1.8vw;
+  font-weight: 500;
+}
+.template-personalinfo-info {
+  font-size: 2vw;
+  font-weight: 500;
+  color: rgb(0, 0, 0);
+}
+.template-education-div {
+  display: flex;
+  justify-content: space-between;
+  font-size: 2vw;
+  margin: auto;
+  align-items: center;
+}
+.template-education-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.template-education-h3 {
+  color: black;
+  font-size: 2.2vw;
+}
+.template-titledate-container {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+}
+.template-educationDate-h3 {
+  width: 30%;
+  color: black;
+  font-size: 1.3vw;
+}
+.unordered-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.template-info-container {
+  padding: 2vw;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  background: linear-gradient(
+    142deg,
+    rgb(233, 233, 233) 0%,
+    rgb(206, 202, 202) 100%
+  );
+}
+li {
+  font-size: 1.8vw;
+  color: black;
+}
+.template-personalinfo-div {
+  display: flex;
+  flex-direction: column;
+  padding: 4vw;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+}
+.template-personalinfo-div:before {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  width: 100vw;
+  height: 40vw;
+  transform: rotate(130deg);
+  bottom: 15vw;
+  left: -20vw;
+  background-color: rgb(228, 228, 228);
+}
+ul {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
