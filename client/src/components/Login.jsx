@@ -2,6 +2,7 @@ import "./Login.css";
 import axios from "axios";
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
+import Host from "../utils/routes";
 
 const Login = ({ clicked, setClicked }) => {
   const navigate = useNavigate();
@@ -12,7 +13,7 @@ const Login = ({ clicked, setClicked }) => {
     const password = target[1].value;
 
     try {
-      const data = await axios.post("http://localhost:5000/unauth/login", {
+      const data = await axios.post(`${Host}/unauth/login`, {
         username,
         password,
       });

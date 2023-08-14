@@ -7,6 +7,7 @@ import ThirdTemplate from "./ThirdTemplate";
 import { Link } from "react-router-dom";
 import "animate.css";
 import "./MyCvs.css";
+import Host from "../utils/routes";
 
 const MyCvs = () => {
   const navigate = useNavigate();
@@ -19,7 +20,8 @@ const MyCvs = () => {
   useEffect(() => {
     axios
       .post(
-        "http://localhost:5000/users/getUser",
+        `${Host}/users/getUser`,
+
         {},
         {
           headers: {
@@ -48,7 +50,7 @@ const MyCvs = () => {
     <div className="animate__animated animate__fadeInUpBig">
       {infos.length == 0 && (
         <div className="nocvs-container">
-          <h1 id="nocvs-header">You have no CV's Yet!</h1>
+          <h1 id="nocvs-header">{`You have no CV's Yet!`}</h1>
           <Link to={"/"}>
             <button id="tryforfree-button">Create now for Free!</button>
           </Link>

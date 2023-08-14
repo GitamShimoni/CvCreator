@@ -2,6 +2,7 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 import "./CreateCv.css";
 import FirstTemplate from "./FirstTemplate";
+import Host from "../utils/routes";
 function CreateCv({ user, refresh, setRefresh }) {
   // const [refresh, setRefresh] = useState(0);
   const [info, setInfo] = useState([]);
@@ -21,7 +22,7 @@ function CreateCv({ user, refresh, setRefresh }) {
     user &&
       axios
         .post(
-          "http://localhost:5000/info/fetchinfo",
+          `${Host}/info/fetchinfo`,
           {
             _id: user[zeroIndex]?.info[tempinfo.length - 1],
           },
@@ -71,7 +72,7 @@ function CreateCv({ user, refresh, setRefresh }) {
       // );
       try {
         const register = await axios.post(
-          "http://localhost:5000/info/createinfo",
+          `${Host}/info/createinfo`,
           {
             id: userId,
             userImg: UserImg,
@@ -265,7 +266,7 @@ function CreateCv({ user, refresh, setRefresh }) {
                   defaultValue={skillsTitle[index]}
                   onChange={(e) => handleSkillTitle(e, index)}
                   className="cv-form-differentSkills-input"
-                  placeholder="[]Skill Highlights"
+                  placeholder="Skill Highlights"
                   type="text"
                 />
                 <div onClick={() => handleAddSkill()} className="xbutton-div">
@@ -288,7 +289,7 @@ function CreateCv({ user, refresh, setRefresh }) {
                   defaultValue={experience[index]?.title}
                   onChange={(e) => handleExperienceTitle(e, index)}
                   className="cv-form-different-input"
-                  placeholder="[]Experience"
+                  placeholder="Experience"
                   type="text"
                 />
                 <input
@@ -328,7 +329,7 @@ function CreateCv({ user, refresh, setRefresh }) {
                   defaultValue={education[index]?.title}
                   onChange={(e) => handleEducationTitle(e, index)}
                   className="cv-form-different-input"
-                  placeholder="[]Education"
+                  placeholder="Education"
                   type="text"
                 />
                 <input

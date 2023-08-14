@@ -36,3 +36,25 @@
 .mainpage-welcome-img {
   width: 80%;
 }
+#button-andarrow-container {
+  display: flex;
+  align-items: center;
+}
+#down-pointing-arrow {
+  margin-left: 30px;
+  width: 8vw;
+  height: 8vw;
+  transition: 0.6s;
+  transform: rotate(90deg);
+  animation: arrowBounce 1s infinite;
+}
+
+@keyframes arrowBounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+}

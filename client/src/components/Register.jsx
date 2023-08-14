@@ -3,6 +3,7 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "animate.css";
+import Host from "../utils/routes";
 
 const Register = () => {
   const [registers, setRegisters] = useState([]);
@@ -21,7 +22,7 @@ const Register = () => {
 
     try {
       const { data: newRegister } = await axios.post(
-        "http://localhost:5000/unauth/register",
+        `${Host}/unauth/register`,
         { username, password, fullname, email, birthdate }
       );
       setRefresh((obj) => obj + 1);
