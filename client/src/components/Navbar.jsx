@@ -12,7 +12,7 @@ const Navbar = () => {
           <img
             id="navbar-icon"
             src="https://i.ibb.co/txDQyz5/cv-logo-removebg-preview.png"
-            alt=""
+            alt="navbar-icon"
           />
         </Link>
       </div>
