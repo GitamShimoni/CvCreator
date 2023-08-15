@@ -2,9 +2,7 @@
   "name": "cv-server",
   "version": "1.0.0",
   "main": "server.js",
-  "scripts": {
-    
-  },
+
   "dependencies": {
     "bcrypt": "^5.1.0",
     "cookie-parser": "^1.4.6",
